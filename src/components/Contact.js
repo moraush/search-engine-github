@@ -4,7 +4,7 @@ const Contact=()=>{
 return(
   <div className ='ui raised very padded text container segment' style={{marginTop:'80px'}}>
   <h1>Contact us</h1>
-  <p>Tourism has traditionally been the third largest foreign exchange
+  <p>Tourism has  been the third largest foreign exchange
   earner in the country. Sri Lanka recorded over 1.9 million tourist
   arrivals in 2019, a 21 percent drop from the previous year owing to the
    aftermath of the Easter Terror Attacks. It is estimated that the sector
