@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchInput from './SearchInput'
 import ImageList from './ImageList'
-import Axios from 'axios'
+import axios from 'axios'
 
 class Home extends React.Component {
   constructor(props){
@@ -11,7 +11,7 @@ class Home extends React.Component {
   }
 
   async onSearchSubmit(entry) {
-    const response= await Axios.get(`https://pixabay.com/api/?key=25028602-e66298e98aa0492ac3fc5236f&q=${entry}&image_type=photo&pretty=true`)
+    const response= await axios.get(`https://pixabay.com/api/?key=25028602-e66298e98aa0492ac3fc5236f&q=${entry}&image_type=photo&pretty=true`)
     console.log(response.data.hits)
     this.setState({images:response.data.hits})
 
